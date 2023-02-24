@@ -1,7 +1,16 @@
 <script>
-  import PdfViewer from 'svelte-pdf'
+  import { isDarkMode } from "$lib/stores/global.store";
 </script>
 
-<div class="w-full h-screen">
-  <PdfViewer url='https://github.com/cmheyselnat300713/CMH/blob/main/static/images/CMH-RESUME.pdf' />
+<div class="w-full h-screen flex justify-center items-center">
+  <embed
+    src="/CMH-RESUME-Dark.pdf#toolbar=0"
+    title='CMH-RESUME'
+    class="w-full h-screen pt-[97px] {$isDarkMode ? '' : 'hidden'}"
+  />
+  <embed
+    src="/CMH-RESUME-Light.pdf#toolbar=0"
+    title='CMH-RESUME'
+    class="w-full h-screen pt-[97px] {$isDarkMode ? 'hidden' : ''}"
+  />
 </div>
