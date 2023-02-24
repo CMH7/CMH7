@@ -12,49 +12,41 @@
   <div class="dark:text-Teal py-5 px-36 bg-Tan/75 dark:bg-PrimaryBlue/75 w-full flex align-middle transition-all fixed top-0 left-0 z-50 backdrop-blur-md">
     <div class="w-full flex items-center justify-between">
       <!-- logo -->
-      {#if $isDarkMode}
-        <a href="#top">
+      <a href="/#top">
+        {#if $isDarkMode}
           <img src="images/logo1.png" alt="logo">
-        </a>
-      {:else}
-        <a href="#top">
+        {:else}
           <img src="images/logo1-Light.png" alt="logo">
-        </a>
-      {/if}
+        {/if}
+      </a>
+      
       <!-- links -->
       <div class="flex items-center justify-end">
         <!-- About -->
         <div class="px-3 py-2 mr-3 cursor-pointer hover:border-b-[1px] hover:border-b-DarkChoco dark:hover:border-b-Teal">
-          <a href="#about">
+          <a href="/#about">
             <span class="text-3xl select-none text-DarkChoco dark:text-Teal">A</span><span class="text-DarkChoco dark:text-Def text-lg font-light select-none">bout</span>
           </a>
         </div>
 
         <!-- Experience -->
         <div class="px-3 py-2 mr-3 cursor-pointer hover:border-b-[1px] hover:border-b-DarkChoco dark:hover:border-b-Teal">
-          <a href="#experience">
+          <a href="/#experience">
             <span class="text-3xl select-none text-DarkChoco dark:text-Teal">E</span><span class="text-DarkChoco dark:text-Def text-lg font-light select-none">xperience</span>
           </a>
         </div>
 
         <!-- Works -->
         <div class="px-3 py-2 mr-3 cursor-pointer hover:border-b-[1px] hover:border-b-DarkChoco dark:hover:border-b-Teal">
-          <a href="#projects">
+          <a href="/#projects">
             <span class="text-3xl select-none text-DarkChoco dark:text-Teal">W</span><span class="text-DarkChoco dark:text-Def text-lg font-light select-none">orks</span>
           </a>
         </div>
 
-        <!-- Contact -->
-        <div class="px-3 py-2 mr-3 cursor-pointer hover:border-b-[1px] hover:border-b-DarkChoco dark:hover:border-b-Teal">
-          <a href="#contact">
-            <span class="text-3xl select-none text-DarkChoco dark:text-Teal">C</span><span class="text-DarkChoco dark:text-Def text-lg font-light select-none">ontact</span>
-          </a>
-        </div>
-
         <!-- Resume Button -->
-        <div class="text-2xl cursor-pointer select-none mx-6 font-light px-5 py-2 border-2 flex justify-center items-center rounded-lg transition-all border-DarkChoco hover:border-Tan dark:border-Teal dark:hover:border-PrimaryBlue bg-transparent hover:bg-DarkChoco dark:hover:bg-Teal text-DarkChoco hover:text-LightTan dark:text-Teal dark:hover:text-PrimaryBlue">
+        <a href='/resume' class="text-2xl cursor-pointer select-none mx-6 font-light px-5 py-2 border-2 flex justify-center items-center rounded-lg transition-all border-DarkChoco hover:border-Tan dark:border-Teal dark:hover:border-PrimaryBlue bg-transparent hover:bg-DarkChoco dark:hover:bg-Teal text-DarkChoco hover:text-LightTan dark:text-Teal dark:hover:text-PrimaryBlue">
           Resume
-        </div>
+        </a>
 
         <!-- dark mode -->
         {#if $isDarkMode}

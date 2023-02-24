@@ -88,6 +88,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>CM Herrera</title>
+</svelte:head>
+
 <!-- Banner -->
 <div id='top' class="w-full h-screen">
   <div class="h-full flex flex-col justify-center items-center">
@@ -259,17 +263,21 @@
   </div>
 </div>
 
-<div id='contact' class="w-full h-screen">
+<!-- <div id='projects' class="w-full h-screen">
   <div class="h-full flex flex-col justify-center items-center">
     <div class="w-full flex items-center justify-center mb-20">
       <div class="w-1/3 h-[1px] bg-Choco dark:bg-Def" />
       <div class="text-6xl font-bold mx-10 text-Choco dark:text-Def">
-        Contact
+        Contact me
       </div>
       <div class="w-1/3 h-[1px] bg-Choco dark:bg-Def" />
     </div>
+
+    <div class="text-2xl text-DarkChoco">
+      Click the icons on the left for my socidal media and github profile and right for my email.
+    </div>
   </div>
-</div>
+</div> -->
 
 <div class="w-full text-center text-[16px] tracking-wide text-DarkChoco dark:text-Highlight py-10 font-semibold">
   Designed and Developed by Charles Maverick Herrera
