@@ -71,19 +71,19 @@
   <!-- socmed links -->
   <div class="flex flex-col items-center fixed left-1 md:left-5 lg:left-10 bottom-0">
     <!-- github -->
-    <div class="mb-4">
+    <a href='https://github.com/CMH7' target="_blank" rel="noreferrer" class="mb-4">
       <Icon svgClass='fill-DarkTan hover:fill-DarkChoco dark:fill-Def dark:hover:fill-Teal cursor-pointer' size={iconSize} path={mdiGithub} />
-    </div>
+    </a>
 
     <!-- instagram -->
-    <div class="mb-4">
+    <a href='https://www.instagram.com/siemcm/?hl=en' target="_blank" rel="noreferrer" class="mb-4">
       <Icon svgClass='fill-DarkTan hover:fill-DarkChoco dark:fill-Def dark:hover:fill-Teal cursor-pointer' size={iconSize} path={mdiInstagram} />
-    </div>
+    </a>
     
     <!-- Facebook -->
-    <div class="mb-4">
+    <a href='https://www.facebook.com/SIEMCMSIEM/' target="_blank" rel="noreferrer" class="mb-4">
       <Icon svgClass='fill-DarkTan hover:fill-DarkChoco dark:fill-Def dark:hover:fill-Teal cursor-pointer' size={iconSize} path={mdiFacebook} />
-    </div>
+    </a>
 
     <!-- line -->
     <div class="w-1 h-0 lg:h-52 bg-DarkTan dark:bg-Def">
@@ -93,9 +93,9 @@
   <!-- email link -->
   <div class="flex flex-col items-center fixed right-2 md:right-5 lg:right-10 bottom-36 lg:bottom-0">
     <!-- github -->
-    <div class="mb-4 rotate-90 text-DarkTan hover:text-DarkChoco dark:text-Def dark:hover:text-Teal cursor-pointer absolute top-[-65%]">
+    <a href='mailto:charlesm.herrera0700@gmail.com' target="_blank" class="mb-4 rotate-90 text-DarkTan hover:text-DarkChoco dark:text-Def dark:hover:text-Teal cursor-pointer absolute top-[-65%]">
       charlesm.herrera0700@gmail.com
-    </div>
+    </a>
 
     <!-- line -->
     <div class="w-1 h-0 lg:h-52 bg-DarkTan dark:bg-Def">

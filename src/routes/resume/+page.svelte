@@ -6,11 +6,11 @@
   <embed
     src="/CMH-RESUME-Dark.pdf#toolbar=0"
     title='CMH-RESUME'
-    class="w-full h-screen pt-[97px] {$isDarkMode ? '' : 'hidden'}"
+    class="w-full h-screen pt-[56px] lg:pt-[97px] {$isDarkMode ? '' : 'w-0'}"
   />
   <embed
     src="/CMH-RESUME-Light.pdf#toolbar=0"
     title='CMH-RESUME'
-    class="w-full h-screen pt-[97px] {$isDarkMode ? 'hidden' : ''}"
+    class="w-full h-screen pt-[56px] lg:pt-[97px] {$isDarkMode ? 'w-0' : ''}"
   />
 </div>
