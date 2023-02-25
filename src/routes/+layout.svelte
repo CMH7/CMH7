@@ -62,14 +62,30 @@
         {/if}
       </div>
 
-      <div class="lg:hidden">
-        |||
+      <div class="lg:hidden flex items-center">
+        <!-- Resume Button -->
+        <a href='/resume' class="text-base cursor-pointer select-none mr-1 font-light px-3 py-1 border-2 flex justify-center items-center rounded-lg transition-all border-DarkChoco hover:border-Tan dark:border-Teal dark:hover:border-Teal bg-transparent hover:bg-DarkChoco dark:hover:bg-Teal text-DarkChoco hover:text-LightTan dark:text-Teal dark:hover:text-PrimaryBlue">
+          Resume
+        </a>
+
+        <!-- dark mode -->
+        {#if $isDarkMode}
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <div on:click={() => {isDarkMode.set(false)}} class="px-3 py-2 cursor-pointer">
+            <Icon svgClass='fill-Teal' size={iconSize - 10} path={mdiWeatherSunny} />
+          </div>
+        {:else}
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <div on:click={() => {isDarkMode.set(true)}} class="px-3 py-2 cursor-pointer">
+            <Icon svgClass='fill-DarkChoco' size={iconSize - 10} path={mdiWeatherNight} />
+          </div>
+        {/if}
       </div>
     </div>
   </div>
 
   <!-- socmed links -->
-  <div class="flex flex-col items-center fixed left-1 md:left-5 lg:left-10 bottom-0">
+  <div class="flex flex-col items-center fixed left-1 md:left-5 lg:left-10 bottom-0 z-50">
     <!-- github -->
     <a href='https://github.com/CMH7' target="_blank" rel="noreferrer" class="mb-4">
       <Icon svgClass='fill-DarkTan hover:fill-DarkChoco dark:fill-Def dark:hover:fill-Teal cursor-pointer' size={iconSize} path={mdiGithub} />
@@ -91,7 +107,7 @@
   </div>
   
   <!-- email link -->
-  <div class="flex flex-col items-center fixed right-2 md:right-5 lg:right-10 bottom-36 lg:bottom-0">
+  <div class="flex flex-col items-center fixed right-2 md:right-5 lg:right-10 bottom-36 lg:bottom-0 z-50">
     <!-- github -->
     <a href='mailto:charlesm.herrera0700@gmail.com' target="_blank" class="mb-4 rotate-90 text-DarkTan hover:text-DarkChoco dark:text-Def dark:hover:text-Teal cursor-pointer absolute top-[-65%]">
       charlesm.herrera0700@gmail.com

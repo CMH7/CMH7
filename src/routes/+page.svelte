@@ -137,9 +137,7 @@
 
     <div class="w-full lg:w-3/4 flex justify-around flex-wrap">
       <div class="iimmaaggee1 w-[181px] md:w-[281px] lg:w-[481px] h-[181px] md:h-[281px] lg:h-[481px] bg-DarkChoco dark:bg-Teal flex justify-center items-center mb-10 lg:mb-0">
-        <div class="iimmaaggee w-[175px] md:w-[275px] lg:w-[475px] h-[175px] md:h-[275px] lg:h-[475px] bg-center bg-[length:350px_350px] md:bg-[length:450px_450px] lg:bg-[length:750px_750px] hover:bg-[length:530px_530px] md:hover:bg-[length:900px_900px] lg:hover:bg-[length:1100px_1100px] opacity-60 hover:opacity-100 brightness-50 hover:brightness-100 ease-in transition-all duration-300">
-  
-        </div>
+        <img alt='dp.jpg' src='/images/dp.jpg' class="iimmaaggee w-[175px] md:w-[275px] lg:w-[475px] h-[175px] md:h-[275px] lg:h-[475px] opacity-60 hover:opacity-100 brightness-50 hover:brightness-100 ease-in transition-all duration-300 z-10" />
       </div>
 
       <div class="w-full lg:w-2/4 h-full flex flex-col lg:justify-around items-end px-12">
@@ -216,8 +214,8 @@
 
       <!-- pic -->
       <a href="http://www.axion.social" class="lg:absolute">
-        <div class="w-[350px] md:w-[900px] lg:w-[1000px] h-[180px] md:h-[400px] lg:h-[500px] dark:bg-Teal rounded-lg overflow-hidden">
-          <div class="w-full h-full bg-axion-home bg-center bg-[length:100%_100%] opacity-60 hover:opacity-100 brightness-50 hover:brightness-100 ease-in transition-all duration-300" />
+        <div class="w-[280px] md:w-[900px] lg:w-[1000px] h-[150px] md:h-[400px] lg:h-[500px] dark:bg-Teal rounded-lg overflow-hidden">
+          <img src='/images/Axion.png' alt='Axion' class="w-full h-full opacity-60 hover:opacity-100 brightness-50 hover:brightness-100 ease-in transition-all duration-300" />
         </div>
       </a>
 
@@ -230,14 +228,14 @@
           Axion
         </div>
 
-        <div class='w-[350px] lg:w-[700px] px-3 lg:px-10 py-3 lg:py-14 rounded-xl drop-shadow-lg bg-Tan dark:bg-MidBlue text-Choco text-justify dark:text-DefLight text-[15px] lg:text-[20px] font-medium leading-relaxed lg:leading-loose lg:z-10'>
+        <div class='w-[280px] lg:w-[700px] px-3 lg:px-10 py-3 lg:py-14 rounded-xl drop-shadow-lg bg-Tan dark:bg-MidBlue text-Choco text-justify dark:text-DefLight text-[15px] lg:text-[20px] font-medium leading-relaxed lg:leading-loose lg:z-10'>
           Our very own capstone project. Axion, an Online Web-Based Academic Task Management Tool for College Students. Manage and complete your tasks wherever you are!
         </div>
 
         <!-- icons -->
-        <div class="flex flex-col lg:flex-row flex-wrap items-center mt-10">
+        <div class="w-full lg:w-fit flex flex-col lg:flex-row lg:items-center mt-10">
           {#each buildOn as bo}
-            <div class='flex items-center ml-9'>
+            <div class='w-2/4 flex items-center lg:ml-9'>
               <div class="mr-2">
                 <img src="{bo.image}" alt="svelteIcon">
               </div>
@@ -252,7 +250,7 @@
     </div>
 
     <div class="w-full lg:w-[80%] flex lg:justify-end items-center mt-5 px-12 lg:px-0">
-      <a href='#contact' class="w-full lg:w-1/6 h-14 text-xl ease-in hover:text-DarkChoco text-LightTan dark:text-PrimaryBlue dark:hover:text-Teal font-bold select-none bg-DarkChoco hover:bg-transparent dark:bg-Teal dark:hover:bg-transparent border-2 border-transparent hover:border-DarkChoco dark:hover:border-Teal transition-all rounded-lg flex justify-center items-center cursor-pointer">
+      <a href='#contact' class="w-full lg:w-1/6 h-14 text-base lg:text-xl ease-in hover:text-DarkChoco text-LightTan dark:text-PrimaryBlue dark:hover:text-Teal font-bold select-none bg-DarkChoco hover:bg-transparent dark:bg-Teal dark:hover:bg-transparent border-2 border-transparent hover:border-DarkChoco dark:hover:border-Teal transition-all rounded-lg flex justify-center items-center cursor-pointer">
         More projects
       </a>
     </div>
@@ -270,7 +268,6 @@
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   }
   .iimmaaggee {
-    background-image: url('images/dp.jpg');
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   }
 </style>

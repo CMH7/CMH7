@@ -5,7 +5,8 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'axion-home': "url('images/Axion.png')"
+				'axion-home': "url('images/Axion.png')",
+				'dp': "url('images/dp.jpg')"
 			},
 			colors: {
 				'Teal': '#64ffda',
